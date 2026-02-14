@@ -1,0 +1,177 @@
+/* general */
+body {
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+    background-color: #fff0f3; /* Updated to soft pink */
+    margin: 0;
+}
+
+/* Password Gate Styling */
+#password-gate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe5ec;
+}
+
+.valentine-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(255, 77, 109, 0.2);
+    border: 2px solid #ffb3c1;
+}
+
+#password-input {
+    padding: 12px;
+    border: 2px solid #ffb3c1;
+    border-radius: 10px;
+    outline: none;
+}
+
+.unlock-btn {
+    background: #ff4d6d !important;
+}
+
+/* Valentine Theme Elements */
+.valentine-header h1 {
+    font-family: 'Georgia', serif;
+    color: #c9184a;
+    font-size: 2rem;
+}
+
+.love-note {
+    font-style: italic;
+    color: #ff4d6d;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+
+#start-img {
+    /*border: 8px solid white;*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 30%;
+}
+
+/* Restoring original button logic with Valentine colors */
+button, .button {
+    margin: auto;
+    width: fit-content;
+    padding: 15px 25px;
+    color: white;
+    background-color: #ff4d6d; /* Romantic red */
+    border: none;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #c9184a;
+    transform: scale(1.05);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.credits {
+    padding-top: 20px;
+    text-align: center;
+    color: #ff758f;
+}
+
+a {
+    color: #c9184a;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.home-icon img {
+    max-width: 150px;
+    width: 10%;
+    padding-bottom: 8px;
+    border-style: none;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu > * {
+    margin-top: 15px;
+}
+
+/* Original Quiz Pages */
+#test img {
+    outline: 2px solid #ffb3c1;
+    border-radius: 5px;
+}
+
+#choices, #question {
+    width: 50%;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#question {
+    font-size: 18px;
+    padding-top: 10px;
+    color: #c9184a;
+}
+
+.choice {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#results img {
+    padding: 10px 0px;
+}
+
+/* profiles page layout */
+
+#gallery {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    /* flexbox magic */
+    display: flex;
+    flex-wrap: wrap;           /* Allows them to move to a new line on small screens */
+    justify-content: space-evenly; /* Even spacing between your valentines */
+    gap: 20px;
+}
+
+.profile {
+    width: 22%;                /* Fits 4 across (25% minus gaps) */
+    min-width: 200px;          /* Prevents them from getting too skinny */
+    height: fit-content;
+    background: white;         /* Optional: makes the card stand out */
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.profile img {
+    width: 100%;               /* Ensures image fills the card width */
+    max-height: 400px;         /* Keeps the height consistent so they align */
+    object-fit: cover;         /* Crops images perfectly if they are different sizes */
+    border-radius: 10px 10px 0 0;
+}
+
+.caption {
+    color: #c9184a;            /* Matches your Valentine red */
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: monospace;
+}
