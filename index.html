@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LLQ3459GG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8LLQ3459GG');
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/truck.png">
+    <title>A Special Surprise ❤️</title>
+</head>
+
+<body>
+
+    <div id="password-gate">
+        <div class="valentine-card">
+            <h1>💌 For Your Eyes Only 💌</h1>
+            <p>Enter our secret password to enter:</p>
+            <input type="password" id="password-input" placeholder="hint: your nickname">
+            <br><br>
+            <button class="unlock-btn" onclick="checkPassword()">Unlock My Heart</button>
+            <p id="error-message" style="color: #c9184a; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <div id="site-content" style="display: none;">
+        
+        <div id="start">
+            <div class="valentine-header">
+                <h1>💖 Happy Valentine's Day! 💖</h1>
+            </div>
+
+            <img id="start-img" src="img/minion.jpg" alt="Valentine image">
+
+            <div class="menu">
+                <p class="love-note">I made this little quiz just for you. Ready to see who your valentine is?</p>
+                <button class="valentine-btn" onclick="startTest()">Let's find out! 💌</button>
+                <div class="button"><a href="profiles.html">See all types</a></div>
+            </div>
+
+            <div class="credits">
+                <p>made with love by (stolen) dale malapitan</p>
+            </div>
+        </div>
+
+        <div id="test" hidden>
+            <img id="story-image">
+            <p id="question"></p>
+            <div id="choices"></div>
+        </div>
+
+        <div id="results" hidden>
+            <a class="home-icon" href="index.html"><img src="img/heart.png" alt="home"></a>
+            <p id="results-text"></p>
+            <img id="personality">
+            <div class="menu">
+                <div class="button"><a href="profiles.html">See all types!</a></div>
+                <button onclick="reset()">Play again >:)</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Password Logic
+        function checkPassword() {
+            const passInput = document.getElementById('password-input').value.toLowerCase();
+            const gate = document.getElementById('password-gate');
+            const content = document.getElementById('site-content');
+            const error = document.getElementById('error-message');
+
+            // Set your password here!
+            if (passInput === 'piggy') {
+                gate.style.display = 'none';
+                content.style.display = 'block';
+            } else {
+                error.innerText = "Incorrect! Try again, love ❤️";
+            }
+        }
+    </script>
+    <script src="js/test.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
